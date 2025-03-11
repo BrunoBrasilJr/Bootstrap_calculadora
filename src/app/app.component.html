@@ -1,34 +1,33 @@
-<body style="background: linear-gradient(to bottom, #f8b6d2, #ffffff); font-family: 'Poppins', sans-serif;">
-  <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-  <div class="card" style="width: 28rem; background-color: #ffe3ed; border-radius: 20px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); border: 3px solid #d63384;">
-  <div class="card-body">
-  <h1 class="card-title text-center mb-3" style="color: #d63384; font-weight: bold;">Calculadora</h1>
-  <div class="input-group mb-2">
-  <input type="number" class="form-control form-control-lg" placeholder="Digite um número..." [(ngModel)]="num1" style="border-radius: 10px; border: 2px solid #e64980;">
-  </div>
-  <div class="input-group mb-3">
-  <input type="number" class="form-control form-control-lg" placeholder="Digite um número" [(ngModel)]="num2" style="border-radius: 10px; border: 2px solid #e64980;">
-  </div>
-  
-  <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickSomar()">Soma</button>
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickSubtrair()">Subtração</button>
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickMultiplicar()">Multiplicação</button>
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickDividir()">Divisão</button>
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickPotenciar()">Potenciação</button>
-  <button type="button" class="btn" style="background-color: #e64980; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #d63384;" (click)="onClickMediar()">Média</button>          
-  </div>
-   
-          <div class="mb-5 text-center">
-  <label for="resultado" class="mb-3" style="color: #d63384; font-weight: bold; font-size: 1.5rem;">Resultado: </label>
-  <p id="resultado" style="font-weight: bold; font-size: 1.5rem; padding: 12px; border-radius: 10px; box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2); width: 220px; margin: 0 auto; background-color: #ffe3ed; color: #d63384; border: 2px solid #d63384;">
-  
-              {{ resultado !== null ? resultado : '...' }}
-  </p>
-  </div>        
-  </div>
-  </div>
-  </div>
-  </body>
-  
-   
+<body style="background: linear-gradient(to bottom, #ffffff, #000000); font-family: 'Poppins', sans-serif;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+          <div class="card" style="width: 28rem; background-color: #ffffff; border-radius: 0px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); border: 3px solid #000000;">
+            <div class="card-body">
+              <h1 class="card-title text-center mb-3" style="color: #000000; font-weight: bold;">Calculadora</h1>
+              
+              <div class="input-group mb-2">
+                <input type="number" class="form-control form-control-lg" placeholder="Digite um número..." [(ngModel)]="num1" style="border-radius: 10px; border: 2px solid #000000;">
+              </div>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control form-control-lg" placeholder="Digite um número" [(ngModel)]="num2" style="border-radius: 10px; border: 2px solid #000000;">
+              </div>
+      
+              <div class="d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickSomar()">Soma</button>
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickSubtrair()">Subtração</button>
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickMediar()">Média</button>
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickMultiplicar()">Multiplicação</button>
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickDividir()">Divisão</button>
+                <button type="button" class="btn" style="background-color: #000000; color: white; padding: 10px 0; width: 130px; font-size:18px; border-radius: 12px; font-weight: bold; border: 2px solid #000000;" (click)="onClickPotenciar()">Potenciação</button>
+              </div>
+              
+              <div class="mb-5 text-center">
+                <label for="resultado" class="mb-3" style="color: #000000; font-weight: bold; font-size: 1.5rem;">Resultado: </label>
+                <p id="resultado" style="font-weight: bold; font-size: 1.5rem; padding: 12px; border-radius: 10px; box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2); width: 220px; margin: 0 auto; background-color: #ffffff; color: #000000; border: 2px solid #000000;">
+                  {{ resultado !== null ? resultado : '...' }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+      
